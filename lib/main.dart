@@ -59,8 +59,20 @@ class _CustomAnimatedToDOListState extends State<CustomAnimatedToDOList> {
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(8.0),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black12,
+                blurRadius: 20.0,
+              ),
+            ],
           ),
           child: Column(
+
+            children: [
+              
+            ],
+
+
 
           ),
         ),
