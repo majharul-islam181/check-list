@@ -69,7 +69,11 @@ class _CustomAnimatedToDOListState extends State<CustomAnimatedToDOList> {
           child: Column(
 
             children: [
-              
+              Container(
+                height: 120,
+                width: 120,
+              )
+
             ],
 
 
