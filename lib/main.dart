@@ -47,6 +47,7 @@ class _CustomAnimatedToDOListState extends State<CustomAnimatedToDOList> {
     Colors.pink,
   ];
 
+
   //there are the required list for the ToDo_LISt
 
   @override
@@ -104,10 +105,37 @@ class _CustomAnimatedToDOListState extends State<CustomAnimatedToDOList> {
                   ],
                 ),
               ),
+              Column(
+                children: listitems.map(
+                  (text) => CustomCheckList(
+                    text,
+                    color: color[listitems.indexOf(text)]),)
+                      .toList(),
+                ),
             ],
           ),
         ),
       ),
     );
+  }
+}
+
+class CustomCheckList extends StatefulWidget {
+  final String text;
+  final Color color;
+  const CustomCheckList({
+    Key? key,
+    required this.color,
+    required this.text,
+  }) : super(key: key);
+
+  @override
+  _CustomCheckListState createState() => _CustomCheckListState();
+}
+
+class _CustomCheckListState extends State<CustomCheckList> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
